@@ -35,8 +35,7 @@ WORKDIR /home/duser
 # Install Python packages
 ENV PATH="/home/duser/.local/bin:$PATH"
 RUN python3 -m pip install --upgrade pip
+ARG REQS
+RUN pip install $REQS -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 
 WORKDIR /home/duser/Craftax
-
-RUN pip install -e /home/duser/Craftax
-RUN pip install -U "jax[cuda12_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
