@@ -18,12 +18,8 @@ from orbax.checkpoint import (
     CheckpointManager,
 )
 
-from craftax.logz.batch_logging import batch_log, create_log_dict
-from craftax.models.actor_critic import (
-    ActorCritic,
-    ActorCriticConv,
-)
-from craftax.environment_base.wrappers import (
+from logz.batch_logging import batch_log, create_log_dict
+from environment_base.wrappers import (
     LogWrapper,
     OptimisticResetVecEnvWrapper,
     AutoResetEnvWrapper,

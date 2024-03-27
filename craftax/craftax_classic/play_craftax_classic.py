@@ -4,17 +4,17 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 
-from craftax.craftax_classic.constants import (
+from constants import (
     OBS_DIM,
     INVENTORY_OBS_HEIGHT,
     Action,
     Achievement,
     BLOCK_PIXEL_SIZE_HUMAN,
 )
-from craftax.craftax_classic.envs.craftax_symbolic_env import (
+from envs.craftax_symbolic_env import (
     CraftaxClassicSymbolicEnv as CraftaxEnv,
 )
-from craftax.craftax_classic.renderer import render_craftax_pixels
+from renderer import render_craftax_pixels
 
 KEY_MAPPING = {
     pygame.K_q: Action.NOOP,

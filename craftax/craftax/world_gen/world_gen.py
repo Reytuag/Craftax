@@ -1,11 +1,11 @@
 import jax
 import jax.scipy as jsp
 
-from craftax.craftax.constants import *
-from craftax.craftax.game_logic import calculate_light_level, get_distance_map
-from craftax.craftax.craftax_state import EnvState, Inventory, Mobs
-from craftax.craftax.util.noise import generate_fractal_noise_2d
-from craftax.craftax.world_gen.world_gen_configs import (
+from ..constants import *
+from ..game_logic import calculate_light_level, get_distance_map
+from ..craftax_state import EnvState, Inventory, Mobs
+from ..util.noise import generate_fractal_noise_2d
+from ..world_gen.world_gen_configs import (
     ALL_DUNGEON_CONFIGS,
     ALL_SMOOTHGEN_CONFIGS,
 )

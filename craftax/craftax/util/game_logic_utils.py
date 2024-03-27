@@ -1,7 +1,7 @@
 import chex
 
-from craftax.craftax.constants import *
-from craftax.craftax.craftax_state import *
+from ..constants import *
+from ..craftax_state import *
 
 # For utility functions - functions called more than once in meaningfully different parts of the codebase
 

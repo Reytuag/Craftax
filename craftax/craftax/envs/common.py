@@ -1,5 +1,5 @@
-from craftax.craftax.craftax_state import EnvState
-from craftax.craftax.constants import *
+from ..craftax_state import EnvState
+from ..constants import *
 
 
 def compute_score(state: EnvState, done: bool):
