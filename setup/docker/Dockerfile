@@ -36,6 +36,7 @@ WORKDIR /home/duser
 ENV PATH="/home/duser/.local/bin:$PATH"
 RUN python3 -m pip install --upgrade pip
 ARG REQS
-RUN pip install $REQS -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+RUN pip3 install -e Craftax
+# RUN pip install $REQS -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 
 WORKDIR /home/duser/Craftax
