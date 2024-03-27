@@ -51,26 +51,26 @@ def make_train(config):
     )
 
     if config["ENV_NAME"] == "Craftax-Classic-Symbolic-v1":
-        from craftax.craftax_classic.envs.craftax_symbolic_env import (
+        from craftax_classic.envs.craftax_symbolic_env import (
             CraftaxClassicSymbolicEnv,
         )
 
         env = CraftaxClassicSymbolicEnv()
         is_symbolic = True
     elif config["ENV_NAME"] == "Craftax-Classic-Pixels-v1":
-        from craftax.craftax_classic.envs.craftax_pixels_env import (
+        from craftax_classic.envs.craftax_pixels_env import (
             CraftaxClassicPixelsEnv,
         )
 
         env = CraftaxClassicPixelsEnv()
         is_symbolic = False
     elif config["ENV_NAME"] == "Craftax-Symbolic-v1":
-        from craftax.craftax.envs.craftax_symbolic_env import CraftaxSymbolicEnv
+        from craftax.envs.craftax_symbolic_env import CraftaxSymbolicEnv
 
         env = CraftaxSymbolicEnv()
         is_symbolic = True
     elif config["ENV_NAME"] == "Craftax-Pixels-v1":
-        from craftax.craftax.envs.craftax_pixels_env import CraftaxPixelsEnv
+        from craftax.envs.craftax_pixels_env import CraftaxPixelsEnv
 
         env = CraftaxPixelsEnv()
         is_symbolic = False
