@@ -6,7 +6,9 @@ import imageio.v3 as iio
 import numpy as np
 from PIL import Image
 from .util.maths_utils import get_distance_map
-from ..environment_base.util import load_compressed_pickle, save_compressed_pickle
+import pickle
+import bz2
+from typing import Any
 
 # GAME CONSTANTS
 OBS_DIM = (9, 11)
@@ -19,6 +21,18 @@ INVENTORY_OBS_HEIGHT = 4
 TEXTURE_CACHE_FILE = os.path.join(
     pathlib.Path(__file__).parent.resolve(), "assets", "texture_cache.pbz2"
 )
+
+
+def save_compressed_pickle(title: str, data: Any):
+    with bz2.BZ2File(title, "w") as f:
+        pickle.dump(data, f)
+
+
+def load_compressed_pickle(file: str):
+    data = bz2.BZ2File(file, "rb")
+    data = pickle.load(data)
+    return data
+
 
 # ENUMS
 class BlockType(Enum):
