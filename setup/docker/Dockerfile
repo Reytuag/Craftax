@@ -38,4 +38,5 @@ RUN python3 -m pip install --upgrade pip
 
 WORKDIR /home/duser/Craftax
 
-RUN pip install -e . -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+RUN pip install -e .
+RUN pip install -U "jax[cuda12_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
