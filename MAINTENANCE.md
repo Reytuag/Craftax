@@ -4,7 +4,7 @@ The Craftax benchmark is hosted on GitHub and is maintained by its authors.
 
 ## How can the manager of the benchmark be contacted?
 
-The manager of the open-source repository can be contacted by the following email: _michael_ [DOT] _matthews_ [AT] _eng_ [DOT] _ox_ [DOT] _ac_ [DOT] _uk_.
+The manager of the open-source repository can be contacted by the following email: ANON
 
 ## Will the benchmark be updated?
 
@@ -19,5 +19,3 @@ Yes, instructions on how to contribute to Craftax are described [here](./CONTRIB
 ## How are issues being solved?
 
 We use GitHub issues to track public bugs. Feel free to open an issue with steps to reproduce the bug.
-
-This document was adapted from the [MiniHack maintenance document](https://github.com/facebookresearch/minihack/blob/main/MAINTENANCE.md).
